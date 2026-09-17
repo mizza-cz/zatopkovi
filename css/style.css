@@ -331,14 +331,16 @@ ol {
   justify-content: flex-end;
 }
 .header__nav a {
-  color: var(--light);
-  font-size: 14px;
+  color: white;
+  font-size: 15px;
   letter-spacing: -0.14px;
+  opacity: 1;
   white-space: nowrap;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
 }
 .header__nav a:hover {
-  opacity: 0.75;
+  /* opacity: 0.75; */
+  color: var(--gold);
 }
 .header__logo {
   flex-shrink: 0;
@@ -885,19 +887,20 @@ ol {
 
 /* Hero entrance animations */
 .hero__heading {
-  color: var(--lightblue);
-  opacity: 0;
+  color: var(--gold);
+  /* opacity: 1; */
   transform: translateY(40px);
   animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
 }
 .hero__subtitle {
-  color: var(--lightblue);
+  color: var(--gold);
+
   font-size: 14px;
   max-width: 446px;
   margin: 32px auto 0;
   letter-spacing: -0.14px;
   line-height: 1.57;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(30px);
   animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards;
 }
@@ -2197,7 +2200,7 @@ html {
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--light);
+  background: var(--gold);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
@@ -2207,7 +2210,7 @@ html {
   transform-origin: left;
 }
 .header__nav a:hover {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 /* --- Counter animation --- */
