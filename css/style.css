@@ -2477,7 +2477,7 @@ html {
 .o-content p:not(:last-child) {
   margin-bottom: 24px;
 }
-
+.o-content h2,
 .o-content h3 {
   margin-bottom: 24px;
 }
